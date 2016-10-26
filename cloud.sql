@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50713
 File Encoding         : 65001
 
-Date: 2016-10-26 21:22:50
+Date: 2016-10-26 21:31:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,6 +27,7 @@ CREATE TABLE `cloud_login` (
   `login_time` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level` int(255) NOT NULL,
+  `size` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
