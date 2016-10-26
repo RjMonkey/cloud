@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50713
 File Encoding         : 65001
 
-Date: 2016-10-26 21:11:50
+Date: 2016-10-26 21:22:50
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ DROP TABLE IF EXISTS `cloud_upload`;
 CREATE TABLE `cloud_upload` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
-  `identity` varchar(255) DEFAULT NULL,
+  `level` int(255) DEFAULT NULL,
   `content` varchar(255) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(255) DEFAULT NULL,
@@ -51,6 +51,7 @@ CREATE TABLE `cloud_upload` (
   `is_delete` varchar(255) DEFAULT NULL,
   `is_examine` varchar(255) DEFAULT NULL,
   `group` varchar(255) DEFAULT NULL,
+  `category` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
