@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50713
 File Encoding         : 65001
 
-Date: 2016-10-26 21:31:44
+Date: 2016-10-26 23:54:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -22,18 +22,26 @@ DROP TABLE IF EXISTS `cloud_login`;
 CREATE TABLE `cloud_login` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
-  `uid` varchar(255) NOT NULL,
+  `user_id` varchar(255) NOT NULL,
   `login_ip` varchar(255) NOT NULL,
   `login_time` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `level` int(255) NOT NULL,
-  `size` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of cloud_login
+-- Table structure for cloud_manage
 -- ----------------------------
+DROP TABLE IF EXISTS `cloud_manage`;
+CREATE TABLE `cloud_manage` (
+  `id` int(11) NOT NULL,
+  `realname` varchar(255) DEFAULT NULL,
+  `login_ip` varchar(255) DEFAULT NULL,
+  `login_time` datetime DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Table structure for cloud_upload
@@ -53,12 +61,9 @@ CREATE TABLE `cloud_upload` (
   `is_examine` varchar(255) DEFAULT NULL,
   `group` varchar(255) DEFAULT NULL,
   `category` varchar(255) DEFAULT NULL,
+  `examine_time` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of cloud_upload
--- ----------------------------
 
 -- ----------------------------
 -- Table structure for cloud_vote
@@ -71,8 +76,4 @@ CREATE TABLE `cloud_vote` (
   `vote_time` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of cloud_vote
--- ----------------------------
 SET FOREIGN_KEY_CHECKS=1;

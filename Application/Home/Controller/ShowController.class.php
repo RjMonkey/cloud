@@ -2,7 +2,30 @@
 namespace Home\Controller;
 use Think\Controller;
 class ShowController extends Controller {
+
+
     public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+        check_login();
+        $list_picture = $this->select_map("picture");
+        $list_video = $this->select_map("video");
+        $list_music = $this->select_map("music");
+        $list_rar = $this->select_map("rar");
+        $this->assign('list_picture', $list_picture);
+        $this->assign('list_video', $list_video);
+        $this->assign('list_music', $list_music);
+        $this->assign('list_rar', $list_rar);
+        $this->display();
+    }
+
+
+    private function select_map($str){
+        $map = array(
+            'group' => "all",
+            'is_delete' => "0",
+            'is_examine' => "1",
+            "category" => $str
+        );
+        $result = M('Upload')->where($map)->select();
+        return $result;
     }
 }
