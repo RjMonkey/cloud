@@ -1,0 +1,62 @@
+#middle{
+	margin-top:70px;
+	width:80%;
+	
+}
+#middle-head{
+	width:100%;
+	height:100px;
+	background-color:#fff;
+}
+#zuozhe{
+	float:right;
+	width:200px;
+	height:80px;
+	margin-top:10px;
+}
+#zz{
+	width:80px;
+	height:80px;
+	background-color:#aa0000;
+}
+#zz-inf p{
+	margin-top:12px;
+	margin-left:5px;
+}
+#zpname{
+	margin-left:20px;
+	width:200px;
+	height:100px;
+}
+#zpname p{
+	font-size:25px;
+	margin-top:35px;
+}
+#middle-body{
+	margin-top:5px;
+
+	background-color:#fff;
+}
+#middle-body p{
+	height:40px;
+	padding-top:30px;
+	margin-left:20px;
+}
+#zp{
+	margin-top:30px;
+	width:50%;
+}
+#zp img{
+	width:100%;
+}
+#like{
+	width:150px;
+	height:200px;
+	background-image:url('../img/12.png');
+	background-repeat:no-repeat;
+	background-position:70% 0%;
+}
+#like p{
+	margin-top:10px;
+	text-align:center;
+}

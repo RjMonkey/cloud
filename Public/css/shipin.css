@@ -1,0 +1,71 @@
+#middle{
+	background-color:#888;
+	height:2000px;
+}
+#p1{
+	margin-top:80px;
+	font-size:30px;
+	text-align:center;
+	font-weight:500;
+}
+#sp-container{
+	width:1200px;
+	background-color:#888;
+	height:1500px;
+}
+.row{
+	width:100%;
+	height:300px;
+}
+.col{
+	height:300px;
+	width:260px;
+	margin:20px 20px;
+	
+}
+.box{
+	margin:10px auto;
+	width:250px;
+	height:240px;
+	background-color:#fff;
+}
+.yuan{
+	margin-left:15px;
+	width:30px;
+	height:30px;
+	border-radius:15px;
+	float:left;
+}
+.yuan img{
+	height:100%;
+	width:100%;
+}
+.minz{
+	height:30px;
+	float:left;
+	margin-top:5px;
+	margin-left:15px;
+}
+.box{
+	border:1px solid #000;
+}
+.index-box{
+	margin:5px auto;
+	height:200px;
+	width:240px;
+}
+.index-box img {
+	height:100%;
+	width:100%;
+}
+.heart{
+	margin-right:10px;
+	float:left;
+	height:20px;
+	width:20px;
+}
+.zoupname{
+	float:left;
+	margin-left:5px;
+	width:70%;
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<style>
+#box{
+                 width:100px;height:100px;background:red;opacity:0.3;position:absolute;
+}
+</style>
+<body>
+      <div id="box"></div>
+</body>
+<script>
+     var oDiv=document.getElementById("box");
+     var alpha=0.3;
+     var timer;
+     oDiv.onmouseover=function(){
+          fadeInOut(0.01);
+     }
+     oDiv.onmouseout=function(){
+          fadeInOut(-0.01);
+     }
+//经验之谈：当你发现两个函数大体一致的情况下，哪个不同就把哪个提为参数
+function fadeInOut(value){
+        clearInterval(timer);
+        timer=setInterval(
+        function(){
+              alpha+=value;
+              oDiv.style.opacity=alpha;
+              if(alpha>=1||alpha<=0.3){
+              clearInterval(timer);
+             }
+       },30);
+}
+
+ 
+</script>
+</html>

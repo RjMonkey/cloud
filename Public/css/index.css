@@ -1,0 +1,237 @@
+body{
+	margin:0 0 0 0;
+}
+ul, ol, li,
+dl, dt, dd,
+h1, h2, h3, h4, h5,
+p {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.yahei{
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+}
+#container{
+	width:100%;
+	height:100%;
+	min-width:800pt;
+	width:expression(document.body.clientWidth < 800? "800pt": "auto" ); 
+}
+#header{
+	width:100%;
+	height:350pt;
+	overflow:hidden;
+	background-image:url('../img/bg1.jpg');
+	background-repeat:no-repeat;
+	background-position:top;
+	z-index:0;
+	display:block;
+	background-size:cover;
+}
+#little_head{
+	overflow:hidden;
+	height:100pt;
+}
+#nav{
+	padding-top:15px;
+	position:fixed;
+	left:5%;
+	float:left;
+	width:400pt;
+	clear:both;
+}
+.head_nav{
+	float:left;
+	margin-left:30pt;
+}
+.head_nav a{
+	color:#fff;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-weight:lighter;
+	font-size:17px;
+	text-decoration:none;
+}
+
+#logre{
+	padding-top:15px;
+	overflow:hidden;
+	float:left;
+	width:200pt;
+	height:40px;
+	position:fixed;
+	right:9%
+	
+}
+#register{
+	margin-left:100pt;
+	font-size:16px;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	color:#fff;
+	background-color:#AA0000;
+	text-align:center;
+	height:34px;
+	width:52px;
+	line-height:32px;
+	text-decoration:none;
+	opacity:0.7;
+	margin-right:10px;
+	border-radius:3px;
+	display:inline-block;
+}
+#register:hover{
+	color:#fff;
+	text-decoration:none;
+	opacity:1;
+}
+
+#login{
+	font-size:16px;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	color:#fff;
+	background-color:0;
+	text-align:center;
+	height:32px;
+	width:50px;
+	line-height:32px;
+	text-decoration:none;
+	margin-right:10px;
+	border-radius:3px;
+	display:inline-block;
+	border:1px solid #fff;
+}
+#login:hover{
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	color:#000;
+	text-decoration:none;
+	background-color:#fff;
+	
+}
+#box_container{
+	width:80%;	
+	height:250pt;
+}
+#box{
+	float:left; 
+	height:200pt; 
+	width:80%;
+	overflow:hidden;
+}
+
+.lr{
+	float:left; 
+	height:200pt; 
+	width:10%;
+}
+
+.lr a{
+	width:84px; 
+	height:124px;
+}
+.aa{
+	opacity:0.5;
+}
+.aa:hover{
+	opacity:1;
+}
+
+#title{
+	position:relative;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:30px;
+	font-size:50px;
+	color:#fff;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-weight:lighter;
+	width:100%;
+}
+#title p{
+	text-align:center;
+	width:100%;
+}
+#search{
+	width:670px;
+	position:relative;
+	margin:0 auto;
+	background-color:#000;
+	opacity:0.5;
+	border-radius:8px;
+	border:2px solid #fff;
+}
+#search:hover{
+	opacity:0.7;
+}
+#search_text{
+	height:40px;
+	width:600px;
+	border-radius:7px;
+	background-color:#000;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-size:16px;
+	border:0px solid #000;
+	color:#fff;
+	padding-left:15px;
+}
+#search_mark{
+	float:right;
+	padding:5px	
+}
+#little_title{
+	width:100%;
+	position:relative;
+	margin:50px auto;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-size:30px;
+}
+#little_title p{
+	width:100%;
+	text-align:center;
+}
+.center{
+	position:relative;
+	margin:0 auto;
+}
+
+#middle{
+	
+	width:80%;
+}
+
+#footer{
+	overflow:hidden;
+	width:100%;
+	height:100pt;
+	background-color:#000;
+}
+#linker{
+	width:100%;
+	 
+	height:50pt;
+	padding-top:50px;
+}
+#linker p{
+	width:100%;
+	color:#fff;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-size:15px;
+	text-align:center;
+}
+#linker .app{
+	width:100%;
+	padding-top:30px;
+	color:#828282;
+	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-size:15px;
+	text-align:center;
+}
+.item{
+	margin-left:10pt;
+	width:250pt;
+	height:auto;
+	float:left;
+	background-color:#000;
+}
+#picture_file{
+	width:100%;
+}
