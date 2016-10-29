@@ -1,39 +1,40 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
-	<title>µÇÂ¼</title>
-	<link rel="stylesheet" href="../css/login.css" type="text/css"/>
+	<title>ç™»å½•</title>
+	<link rel="stylesheet" href="/cloud/Public/css/login.css" type="text/css"/>
+	<meta charset="utf-8">
 </head>
 <body>
-	<div id="page">
-		<div id="head">
-			<div  id="heart"></div>
-			<div id="biaoti"><p>»¶Ó­À´µ½±±ÑóºÇºÇºÇ</p></div>
-		</div>
-		<div id="middle" >
-			<p style="height:1px;"></p>
-			<div id="logbox" >
+<div id="page">
+	<div id="head">
+		<div  id="heart"></div>
+		<div id="biaoti"><p>æ¬¢è¿æ¥åˆ°åŒ—æ´‹å‘µå‘µå‘µ</p></div>
+	</div>
+	<div id="middle" >
+		<p style="height:1px;"></p>
+		<div id="logbox" >
 			<form>
-				<div class="feiru" > 
-					<img src="../img/people.png" class="inp-img"/>
-					<input type="text" placeholder="ÊäÈëÑ§ºÅ»ò¹¤ºÅ"/>
+				<div class="feiru" >
+					<img src="/cloud/Public/img/people.png" class="inp-img"/>
+					<input type="text" placeholder="è¾“å…¥å­¦å·æˆ–å·¥å·"/>
 				</div>
 				<div class="feiru" style="margin-top:5%;">
-					<img src="../img/key.png" / class="inp-img">
-					<input type="text" placeholder="ÃÜÂë"/>
+					<img src="/cloud/Public/img/key.png" / class="inp-img">
+					<input type="text" placeholder="å¯†ç "/>
 				</div>
-				<a href="#" id="forget">Íü¼ÇÃÜÂë&gt&gt</a>
+				<a href="#" id="forget">å¿˜è®°å¯†ç &gt&gt</a>
 			</form>
-			</div>
-			<div id="button"  onmouseover="style.backgroundImage= 'url(../img/hover.png)';" onmouseout="style.backgroundImage= 'url(../img/normal.png)';" onmousedown="style.backgroundImage= 'url(../img/press.png)';" onmouseup="style.backgroundImage= 'url(../img/hover.png)';" >
-				
-			</div>
-		</div >
+		</div>
+		<div id="button"  onmouseover="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';" onmouseout="style.backgroundImage= 'url(/cloud/Public/img//normal.png)';" onmousedown="style.backgroundImage= 'url(/cloud/Public/img/press.png)';" onmouseup="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';" >
 
-	</div>
-	
+		</div>
+	</div >
+
+</div>
+
 </body>
-<script src="../js/jquery-3.1.0.min.js" type="text/javascript"></script>
+<script src="/cloud/Public/js/jquery-3.1.0.min.js" type="text/javascript"></script>
 <script>
 	var middle=document.getElementById("middle");
 	var HTwidth = document.body.offsetWidth/1.3;
@@ -46,8 +47,8 @@
 	var head = document.getElementById('head');
 	var forget = document.getElementById('forget');
 	var biaoti =document.getElementById('biaoti');
-	
-	
+
+
 	for(var i=0;i<input.length;i++){
 		feiru[i].style.width = HTwidth * 0.3 * 0.7 +"px";
 		feiru[i].style.height = HTwidth/55 +"px";
@@ -84,37 +85,37 @@
 	heart.style.width = HTwidth/35 +"px";
 	forget.style.fontSize = HTwidth/80 +"px";
 	head.style.height = HTwidth/15 +"px";
-	
-	
-	
+
+
+
 	/*
-	myimg.onmouseout = function(){
-		myimg.src = "../img/1.png";
-	}
-	*/
-	/* 
-    var alpha=0.1;
-    var timer;
-    fadeInOut(0.005);
-	function fadeInOut(value){
-        clearInterval(timer);
-        timer=setInterval(
-        function(){
-              alpha+=value;
-              middle.style.background=alpha;
-              if(alpha>=1||alpha<=0){
-              clearInterval(timer);
-             }
-       },30);
-	}
-	*/
+	 myimg.onmouseout = function(){
+	 myimg.src = "../img/1.png";
+	 }
+	 */
+	/*
+	 var alpha=0.1;
+	 var timer;
+	 fadeInOut(0.005);
+	 function fadeInOut(value){
+	 clearInterval(timer);
+	 timer=setInterval(
+	 function(){
+	 alpha+=value;
+	 middle.style.background=alpha;
+	 if(alpha>=1||alpha<=0){
+	 clearInterval(timer);
+	 }
+	 },30);
+	 }
+	 */
 	$(document).ready(function(){
 		var times = 0;
 		var cishu = 3;
 		$('#logbox').fadeIn(100);
 		$('#logbox').animate({left:"40%",opacity:"1"},400);
-		
-		
+
+
 		tantiao();
 		function tantiao(){
 			if( times <= 3){
@@ -131,6 +132,6 @@
 			return;
 		}
 	})
-	
+
 </script>
 </html>
