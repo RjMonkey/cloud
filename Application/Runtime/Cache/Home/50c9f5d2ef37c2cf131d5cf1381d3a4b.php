@@ -20,7 +20,7 @@
 					<input type="text" placeholder="输入学号或工号"/>
 				</div>
 				<div class="feiru" style="margin-top:5%;">
-					<img src="/cloud/Public/img/key.png" / class="inp-img">
+					<img src="/cloud/Public/img/key.png"  class="inp-img">
 					<input type="text" placeholder="密码"/>
 				</div>
 				<a href="#" id="forget">忘记密码&gt&gt</a>

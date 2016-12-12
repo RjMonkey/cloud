@@ -1,7 +1,85 @@
 #container{
-	width:80%;
+	width:70%;
 	height:1000px;
 }
-#container p{
+.little-title{
+	font-size:25px;
 	margin-top:80px;
+}
+#inf-box{
+	padding-top:40px;
+	width:1076px;
+	height:550px;
+	background-color:#fff;
+}
+#zpname-box{
+	height:100px;
+}
+.little2title{
+	float:left;
+	width:100px;
+	font-size:22px;
+}
+#zpname{
+	border-radius:5px;
+	border:1px solid #888;
+	height:35px;
+	float:left;
+	width:800px;
+}
+#neirong{
+	height:500px;
+	width:900px;
+}
+#kind{
+	height:100px;
+}
+select {
+	float:left;
+    border: solid 1px #888;
+	height:35px;
+	width:150px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+	border-radius:3px;
+    padding-left: 14px;
+	
+    background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+}
+#selects:hover{
+	background-color:#428bca;
+}
+.type{
+	line-height:35px;
+	text-align:center;
+	margin-left:20px;
+	float:left;
+	border-radius:5px;
+	border:1px solid #888;
+	height:35px;
+	width:120px;
+}
+#jieshao{
+	padding:10px;
+	margin-left:30px;
+	width:630px;
+	height:150px;
+	border-radius:10px;
+	border:1px solid #888;
+}
+#submit{
+	border:solid 1px #888;
+	border-radius:8px;
+	text-align:center;
+	line-height:35px;
+	font-size:18px;
+	margin-top:50px;
+	background-color:#fff68f;
+	height:35px;
+	width:350px;
+}
+#submit:hover{
+	opacity:0.7;
 }
