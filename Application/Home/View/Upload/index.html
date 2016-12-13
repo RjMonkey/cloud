@@ -5,6 +5,14 @@
 	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" href="__PUBLIC__/css/commom.css" type="text/css">
 	<link rel="stylesheet" href="__PUBLIC__/css/sc.css" type="text/css">
+	<link rel="stylesheet" href="__PUBLIC__/css/sweet-alert.css" type="text/css">
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="__PUBLIC__/js/my_main.js"></script>
+	<script src="__PUBLIC__/js/sweet-alert.min.js"></script>
+
+
+
 </head>
 <body>
 	<div id="page">
@@ -19,46 +27,33 @@
 					</ul>
 					<ul class="nav nav-pills left">
 						<li class="dropdown">
-							<a href="##" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
+							<a  href="##" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
 							<ul class="dropdown-menu"  >
-								<li ><a href="##">CSS3</a></li>
-								<li ><a href="##">HTML5</a></li>
-								<li ><a href="##">Sass</a></li>
+								<li ><a href="##">二维</a></li>
+								<li ><a href="##">三维</a></li>
+								<li ><a href="##">设计作品</a></li>
 							</ul>
 						</li>
 					</ul>
 					<ul class="nav nav-pills left">
 						<li class="dropdown">
 							<a href="##" data-toggle="dropdown" class="dropdown-toggle"  >视频</a>
-							<ul class="dropdown-menu"  >
-								<li ><a href="##">CSS3</a></li>
-								<li ><a href="##">HTML5</a></li>
-								<li ><a href="##">Sass</a></li>
-							</ul>
+
 						</li>
 					</ul>
 					<ul class="nav nav-pills left">
 						<li class="dropdown">
 							<a href="##" data-toggle="dropdown" class="dropdown-toggle"  >音频</a>
-							<ul class="dropdown-menu"  >
-								<li ><a href="##">CSS3</a></li>
-								<li ><a href="##">HTML5</a></li>
-								<li ><a href="##">Sass</a></li>
-							</ul>
+
 						</li>
 					</ul>
 					<ul class="nav nav-pills left">
 						<li class="dropdown">
-							<a href="##" data-toggle="dropdown" class="dropdown-toggle"  >压缩</a>
-							<ul class="dropdown-menu"  >
-								<li ><a href="##">CSS3</a></li>
-								<li ><a href="##">HTML5</a></li>
-								<li ><a href="##">Sass</a></li>
-							</ul>
+							<a  href="##" data-toggle="dropdown" class="dropdown-toggle"  >压缩</a>
+
 						</li>
 					</ul>
-					<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-					<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 	
 				</div>
 				<div id="search" class="left">
@@ -86,7 +81,7 @@
 			<div id="container" class="center">
 				<div style="height:50px;"><p class="yahei little-title">上传作品</p></div>
 				<div id="inf-box" class="center">
-					<form name="form" enctype="multipart/form-data"  action="__CONTROLLER__/upload" method="post">
+					<form name="form" id="formId" enctype="multipart/form-data"  method="post">
 						<div id="neirong" class="center">
 							<div id="zpname-box">
 								<p class="yahei little2title">作品名称:</p>
@@ -94,59 +89,45 @@
 							</div>
 							<div id="kind">
 								<p class="yahei little2title">作品类型:</p>
-								<select id="type-select" name="type" required>
-									<option value="pic">图片</option>
-									<option value="mov">视频</option>
-									<option value="mic">音频</option>
-									<option value="rar ">压缩</option>
+								<select id="type-select" name="type" onchange="showdiv()" required="required">
+									<option id="pic" value="pic">图片</option>
+									<option id="mov" value="mov">视频</option>
+									<option id="mic" value="mic">音频</option>
+									<option id="rar" value="rar ">压缩</option>
 								</select>
-								<p class="yahei type">UI设计</p>
+
+								<select id="tag" name="tag" required="required" >
+									<option value="二维" class="yahei type">二维</option>
+									<option value="三维" class="yahei type">三维</option>
+									<option value="设计作品" class="yahei type">设计作品</option>
+								</select>
+
+
 							</div>
 							<div id="send">
 								<p class="yahei little2title">上传作品:</p>
 								<div class="yahei type" id="selects" style="cursor: pointer;position: relative;">
 									<span style="display: inline-block" id="fileName">选择作品</span>
 
-									<input id="file" name="content" type="file" style="
-									display: block;
-									position: absolute;
-									top: 0;
-									left: 0;
-									width: 120px; /* 宽高和外围元素保持一致 */
-									height: 35px;
-									opacity: 0;
-									 -moz-opacity: 0;  /* 兼容老式浏览器 */-->
-									filter: alpha(opacity=0); /* 兼容IE */" value="选择作品" onchange="handleFile()" required="required">
+									<input id="file" name="content" type="file" class="hidden_dom" value="选择作品" onchange="handleFile()" required="required">
 
 								</div>
-
-
-
-
-
-
 
 								<textarea id="jieshao" cols ="50" rows = "3" placeholder="作品说明" name="description" required="required"></textarea>
 							</div>
 							<!--<div id="submit"  class="yahei center" onclick="javascript:form.submit();">确定</div>-->
 							<div id="submit"  class="yahei center" >
 								<span style="display: inline-block">确定</span>
-								<input name="submit" type="submit" style="
-									display: block;
-									position: absolute;
-									top: 0;
-									left: 0;
-									width: 100%; /* 宽高和外围元素保持一致 */
-									height: 100%;
-									opacity: 0;
-									 -moz-opacity: 0;  /* 兼容老式浏览器 */-->
-									filter: alpha(opacity=0); /* 兼容IE */" >
+								<input name="submit" type="submit" class="hidden_dom" onclick="uploadInsert()">
 							</div>
+
 						</div>
 					</form>
+
 				</div>
 			</div>
 		</div>
+
 		<div id="footer">
 			<div  id="linker" class="center">
 				<p id="link_list">
@@ -164,10 +145,19 @@
 	</div>
 </body>
 <script>
-	var file = document.getElementById("file");
-	var fileName = document.getElementById("fileName");
-	function handleFile(){
-		fileName.innerHTML = file.value;
+	function insert() {
+
 	}
+
+</script>
+<script type="text/javascript">
+	function checkInsert() {
+		$.get("__CONTROLLER__/upload", function(data){
+			var data = JSON.parse(data);
+			var err_message = data.err_message;
+			sweetAlert(err_message);
+		})
+	}
+
 </script>
 </html>

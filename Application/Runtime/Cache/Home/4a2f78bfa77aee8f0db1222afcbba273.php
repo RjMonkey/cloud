@@ -1,15 +1,19 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
-<html lang="en">
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
+
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script src="/cloud/Public/js/sweet-alert.min.js"></script>
+    <script type="text/javascript">
+        $.get("/cloud/index.php/Home/Upload/test", function(data){
+            var data = JSON.parse(data);
+            var b = data.d;
+            sweetAlert(b)
+        })
+    </script>
 </head>
 <body>
-<form action="/cloud/index.php/Home/Upload/upload" enctype="multipart/form-data" method="post" >
-    <input type="text" name="name" />
-    <input type="file" name="photo" />
-    <input type="submit" value="提交" >
-</form>
+
 
 </body>
 </html>
