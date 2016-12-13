@@ -1,11 +1,11 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
 	<title>个人主页</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/css/commom.css" type="text/css">
-	<link rel="stylesheet" href="__PUBLIC__/css/personal.css" type="text/css">
+	<link rel="stylesheet" href="/cloud/Public/css/bootstrap.css" type="text/css">
+	<link rel="stylesheet" href="/cloud/Public/css/commom.css" type="text/css">
+	<link rel="stylesheet" href="/cloud/Public/css/personal.css" type="text/css">
 
 </head>
 <body>
@@ -100,7 +100,7 @@
 		<div id="middle-body">
 			<p class="yahei">寒风细雨秋来到，落叶归根又一年....</p>
 			<div id="zp" class="center">
-				<img src="__PUBLIC__/img/11.jpg"/>
+				<img src="/cloud/Public/img/11.jpg"/>
 			</div>
 			<div id="like" class="center">
 				<p class="yahei">455</p>
