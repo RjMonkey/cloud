@@ -13,7 +13,7 @@ p {
 }
 .dropdown-toggle{
 	color:#000;
-	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-family:"Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"MicrosoftJhengHei",ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½,STHeiti,MingLiu;
 	font-size:16px;
 	height:48px;
 	width:100px;
@@ -51,14 +51,14 @@ p {
 	width:100%;
 	padding-top:30px;
 	color:#828282;
-	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-family:"Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"MicrosoftJhengHei",ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½,STHeiti,MingLiu;
 	font-size:15px;
 	text-align:center;
 }
 #link_list a{
 	text-decoration:none;
 	color:#fff;
-	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-family:"Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"MicrosoftJhengHei",ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½,STHeiti,MingLiu;
 	font-size:15px;
 	
 }
@@ -75,13 +75,13 @@ p {
 	left:0;
 	right:0;
 	z-index:9999;
-	background-color:#aa0000;
+	background-color:#ffffff;
 }
 .left{
 	float:left;
 }
 .yahei{
-	font-family:"Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,STHeiti,MingLiu;
+	font-family:"Microsoft YaHei",Î¢ï¿½ï¿½ï¿½Åºï¿½,"MicrosoftJhengHei",ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½,STHeiti,MingLiu;
 }
 .nav-item{
 	width:100px;
@@ -120,4 +120,18 @@ p {
 .person-item p{
 	margin-top:12px;
 	text-align:center-left;
+}
+#tag{
+	margin-left: 10px;
+}
+.hidden_dom{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; /* å®½é«˜å’Œå¤–å›´å…ƒç´ ä¿æŒä¸€è‡´ */
+	height: 100%;
+	opacity: 0;
+	-moz-opacity: 0;  /* å…¼å®¹è€å¼æµè§ˆå™¨ */-->
+	filter: alpha(opacity=0);
 }
