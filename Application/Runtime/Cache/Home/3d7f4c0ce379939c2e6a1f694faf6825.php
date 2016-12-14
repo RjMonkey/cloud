@@ -10,7 +10,8 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<script src="/cloud/Public/js/my_main.js"></script>
 	<script src="/cloud/Public/js/sweet-alert.min.js"></script>
-
+    <script src="/cloud/Public/js/jquery.uploadify.js"></script>
+	<script src="/cloud/Public/js/jquery.uploadify.min.js"></script>
 
 
 </head>
