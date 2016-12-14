@@ -1237,3 +1237,27 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
 
+[ 2016-12-13T23:25:04+08:00 ] ::1 /cloud/index.php/Home/Show/index
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES)
+
+[ 2016-12-13T23:25:07+08:00 ] ::1 /cloud/index.php/Home/Show/index
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES)
+
+[ 2016-12-13T23:26:28+08:00 ] ::1 /cloud/index.php/Home/Show/index
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES)
+
+[ 2016-12-13T23:27:31+08:00 ] ::1 /cloud/index.php/Home/Index/index
+ERR: _STORAGE_WRITE_ERROR_:./Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php
+
+[ 2016-12-13T23:43:59+08:00 ] ::1 /cloud/index.php/home/show
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES)
+
+[ 2016-12-13T23:45:41+08:00 ] ::1 /cloud/index.php/home/show
+ERR: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: YES)
+
+[ 2016-12-13T23:51:46+08:00 ] ::1 /cloud/index.php/home/show
+ERR: syntax error, unexpected 'xXXXX' (T_STRING), expecting function (T_FUNCTION)
+
+[ 2016-12-13T23:51:49+08:00 ] ::1 /cloud/index.php/home/show
+ERR: syntax error, unexpected 'xXXXX' (T_STRING), expecting function (T_FUNCTION)
+
