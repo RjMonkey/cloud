@@ -1,107 +1,3 @@
-<<<<<<< HEAD
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
-<html>
-<head>
-	<title>首页</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/cloud/Public/css/index.css" type="text/css">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0.2,maximum-scale=1.0,user-scalable=no" charset="utf-8">
-</head>
-<body>
-	<div id="page">
-		<div id="head-box">
-			<div id="background-box">
-				<div id="list">
-					<img src="/cloud/Public/img/bg.jpg" class="bgimg"/>
-					<img src="/cloud/Public/img/1.jpg" class="bgimg"/>
-					<img src="/cloud/Public/img/3.jpg" class="bgimg"/>
-					<img src="/cloud/Public/img/4.jpg" class="bgimg"/>
-					<img src="/cloud/Public/img/bg.jpg" class="bgimg"/>
-					<img src="/cloud/Public/img/1.jpg" class="bgimg"/>
-				</div>
-			</div>
-			<div id="header" class="hts">
-				<div id="head-container">
-					<div id="nav" class="yahei">
-						<a href="#" class="head_item">首页</a>
-						<a href="#" class="head_item">视频</a>
-						<a href="#" class="head_item">音频</a>
-						<a href="#" class="head_item">图片</a>
-						<a href="#" class="head_item">压缩文件</a>
-					</div>
-					<form id="search_form">
-						<input id="head_search" type="text"  placeholder="Search here.."/>
-					</form>
-					<div id="logre">
-						<a id="register" href="#" class="yahei">注册</a>
-						<a id="login" href="<?php echo U('login/login');?>" class="yahei">登陆</a>
-					</div>
-
-				</div>
-			</div>
-			<div id="menu">
-				<div id="title" class="yahei">
-					<p>王者，代练上王者</p>
-				</div>
-				<div id="prev">
-					<a href="#" class="cg" id="left" >
-						<img src="/cloud/Public/img/left.png"/>
-					</a>
-				</div>
-				<div id="next">
-					<a href="#" class="cg" id="right" >
-						<img src="/cloud/Public/img/right.png"/>
-					</a>
-				</div>
-
-				<form id= "search-box">
-					<input id="search" type="text"  placeholder="Search here.."/>
-				</form>
-				<div id="buttons">
-					<span index="1"></span>
-					<span index="2"></span>
-					<span index="3"></span>
-					<span index="4"></span>
-				</div>
-			</div>
-		</div>
-		<div id="middle-box">
-			<div id="title-box">
-				<p class="yahei">最新原创推荐</p>
-			</div>
-			<div id="tupian-box">
-				<p class="yahei">图片</p>
-				<div class="row">
-					<div class="col"></div>
-					<div class="col"></div>
-					<div class="col"></div>
-					<div class="col"></div>
-				</div>
-				<div class="row"></div>
-			</div>
-			<div></div>
-			<div></div>
-			<div></div>
-		</div>
-		<div id="footer">
-			<div  id="linker" class="center">
-				<p id="link_list">
-					<a href="#">&nbsp 关于我们&nbsp | </a>
-					<a href="#">&nbsp 联系我们&nbsp |</a>
-					<a href="#">&nbsp 帮助中心&nbsp |</a>
-					<a href="#">&nbsp 法律声明&nbsp |</a>
-					<a href="#">&nbsp 广告合作热线</a>
-				</p>
-				<p class="app">
-					&copy e.tju.edu.cn天津大学王者工作室荣誉出品
-				</p>
-			</div>
-		</div>
-	</div>
-</body>
-<script type="text/javascript" src="/cloud/Public/js/index.js"></script>
-
-=======
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html>
 <head>
@@ -116,23 +12,26 @@
 		<div id="biaoti"><p>欢迎来到北洋呵呵呵</p></div>
 	</div>
 	<div id="middle" >
+		<form action="/cloud/index.php/Home/Index/login" method="post">
 		<p style="height:1px;"></p>
 		<div id="logbox" >
-			<form>
+
 				<div class="feiru" >
 					<img src="/cloud/Public/img/people.png" class="inp-img"/>
-					<input type="text" placeholder="输入学号或工号" name="username" />
+					<input type="text" placeholder="输入学号或工号" name="username" required="required"/>
 				</div>
 				<div class="feiru" style="margin-top:5%;">
 					<img src="/cloud/Public/img/key.png" / class="inp-img">
-					<input type="password" name="password" placeholder="密码"/>
+					<input type="password" name="password" placeholder="密码" required="required"/>
 				</div>
+
 				<a href="#" id="forget">忘记密码&gt&gt</a>
-			</form>
-		</div>
-		<div id="button"  onmouseover="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';" onmouseout="style.backgroundImage= 'url(/cloud/Public/img//normal.png)';" onmousedown="style.backgroundImage= 'url(/cloud/Public/img/press.png)';" onmouseup="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';" type="submit">
+
+
 
 		</div>
+		<button id="button"  type="submit" onmouseover="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';" onmouseout="style.backgroundImage= 'url(/cloud/Public/img/normal.png)';" onmousedown="style.backgroundImage= 'url(/cloud/Public/img/press.png)';" onmouseup="style.backgroundImage= 'url(/cloud/Public/img/hover.png)';"></button>
+		</form>
 	</div >
 
 </div>
@@ -238,5 +137,4 @@
 	})
 
 </script>
->>>>>>> 79b40521d3f39ca8f89fc8bf9e33ad588cdc14de
 </html>
