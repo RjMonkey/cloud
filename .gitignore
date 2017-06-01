@@ -1,0 +1,4 @@
+Application/Runtime/*
+Public/Uploads/*
+/Application/Common/Conf/config.php
+Uploads/*
