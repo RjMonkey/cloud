@@ -16,8 +16,12 @@ class ShowController extends Controller {
         $this->assign('list_rar', $list_rar);
         $this->display();
     }
-
-
+    public function detail(){
+        $this->display();
+    }
+    public function video(){
+        $this->display();
+    }
     private function select_map($str){
         $map = array(
             'group' => "all",

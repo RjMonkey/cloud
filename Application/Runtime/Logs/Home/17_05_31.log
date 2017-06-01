@@ -43,3 +43,29 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000525s ]
 
+[ 2017-05-31T11:14:48+08:00 ] ::1 /cloud/index.php/Home/Upload/upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000554s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000597s ]
+
+[ 2017-05-31T15:23:21+08:00 ] ::1 /cloud/index.php/Home/Upload/upload
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)
+
+[ 2017-05-31T15:25:22+08:00 ] ::1 /cloud/index.php/Home/Personal/personal.html
+ERR: 非法操作:personal
+
+[ 2017-05-31T15:27:29+08:00 ] ::1 /cloud/index.php/Home/Personal/personal.html
+ERR: 非法操作:personal
+
+[ 2017-05-31T17:13:56+08:00 ] ::1 /cloud/index.php/Home/Show/viedo
+ERR: 非法操作:viedo
+
+[ 2017-05-31T17:14:35+08:00 ] ::1 /cloud/index.php/Home/Show/mic
+ERR: 非法操作:mic
+
+[ 2017-05-31T17:14:38+08:00 ] ::1 /cloud/index.php/Home/Show/viedo
+ERR: 非法操作:viedo
+

@@ -4,7 +4,7 @@
 	<title>个人主页</title>
 	<link rel="stylesheet" href="/cloud/Public/css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" href="/cloud/Public/css/commom.css" type="text/css">
-	<link rel="stylesheet" href="/cloud/Public/css/sc.css" type="text/css">
+	<link rel="stylesheet" href="/cloud/Public/css/personal.css" type="text/css">
 </head>
 <body>
 <div id="page">
@@ -64,52 +64,28 @@
             </div>
         </div>
     </div>
-<div id="middle" >
-	<div id="container" class="center">
-		<div style="height:50px;"><p class="yahei little-title">上传作品</p></div>
-		<div id="inf-box" class="center">
-			<form name="form" id="formId" enctype="multipart/form-data"  method="post" action="/cloud/index.php/Home/Upload/upload">
-				<div id="neirong" class="center">
-					<div id="zpname-box">
-						<p class="yahei little2title">作品名称:</p>
-						<input  id="zpname" type="text" name="name" required="required"/>
-					</div>
-					<div id="kind">
-						<p class="yahei little2title">作品类型:</p>
-						<select id="type-select" name="category" onchange="showdiv()" required="required">
-							<option id="pic" value="pic">图片</option>
-							<option id="mov" value="mov">视频</option>
-							<option id="mic" value="mic">音频</option>
-							<option id="rar" value="rar ">压缩</option>
-						</select>
-
-						<select id="tag" name="tag" required="required" >
-							<option value="二维" class="yahei type">二维</option>
-							<option value="三维" class="yahei type">三维</option>
-							<option value="设计作品" class="yahei type">设计作品</option>
-						</select>
-
-
-					</div>
-					<div id="send">
-						<p class="yahei little2title">上传作品:</p>
-						<div class="yahei type" id="selects" style="cursor: pointer;position: relative;">
-							<span style="display: inline-block" id="fileName">选择作品</span>
-
-							<input id="file" name="content" type="file" class="hidden_dom" value="选择作品" onchange="handleFile()" required="required">
-
-						</div>
-
-						<textarea id="jieshao" cols ="50" rows = "3" placeholder="作品说明" name="description" required="required"></textarea>
-					</div>
-					<!--<div id="submit"  class="yahei center" onclick="javascript:form.submit();">确定</div>-->
-					<div id="submit"  class="yahei center" >
-						<span style="display: inline-block">确定</span>
-						<input  type="submit" class="hidden_dom" >
-					</div>
-
-				</div>
-			</form>
+<div id="middle" class="center">
+	<div id="middle-head">
+		<div id="zpname" class="left">
+			<p class="yahei left" >图片-艺术:水浒传</p>
+		</div>
+		<div id="zuozhe" >
+			<div id="zz" class="left">
+			</div>
+			<div id="zz-inf" class="left">
+				<p class="yahei">可爱的小鼻子</p>
+				<p class="yahei">学生</p>
+			</div>
+		</div>
+	</div>
+	<div id="middle-body">
+		<p class="yahei">寒风细雨秋来到，落叶归根又一年....</p>
+		<div id="zp" class="center">
+			<img src="/cloud/Public/img/11.jpg"/>
+		</div>
+		<div id="like" class="center">
+			<p class="yahei">455</p>
+			<p class="yahei">喜欢这个作品</p>
 		</div>
 	</div>
 </div>
