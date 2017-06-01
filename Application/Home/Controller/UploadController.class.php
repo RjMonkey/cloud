@@ -14,6 +14,7 @@ class UploadController extends Controller {
         $data['is_examine'] = 0;
 
         $category = $data['category'];
+        $max_size = I('session.max_size');
 
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize   =     3145728 ;// 设置附件上传大小

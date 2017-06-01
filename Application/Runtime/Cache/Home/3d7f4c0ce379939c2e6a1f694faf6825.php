@@ -18,7 +18,7 @@
                 </ul>
                 <ul class="nav nav-pills left">
                     <li class="dropdown">
-                        <a  href="##" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
                         <ul class="dropdown-menu"  >
                             <li ><a href="##">二维</a></li>
                             <li ><a href="##">三维</a></li>
@@ -28,18 +28,17 @@
                 </ul>
                 <ul class="nav nav-pills left">
                     <li class="dropdown">
-                        <a href="##" data-toggle="dropdown" class="dropdown-toggle"  >视频</a>
-
+                        <a href="/cloud/index.php/Home/Show/video"  class="dropdown-toggle"  >视频</a>
                     </li>
                 </ul>
                 <ul class="nav nav-pills left">
                     <li class="dropdown">
-                        <a href="##" data-toggle="dropdown" class="dropdown-toggle"  >音频</a>
+                        <a href="/cloud/index.php/Home/Show/mic"  class="dropdown-toggle"  >音频</a>
                     </li>
                 </ul>
                 <ul class="nav nav-pills left">
                     <li class="dropdown">
-                        <a  href="##" data-toggle="dropdown" class="dropdown-toggle"  >压缩</a>
+                        <a  href="/cloud/index.php/Home/Show/rar"  class="dropdown-toggle"  >压缩</a>
                     </li>
                 </ul>
             </div>
@@ -56,10 +55,9 @@
                     </a>
                 </div>
                 <div class="person-item left">
-                    <p><img src="/cloud/Public/img/ren.png"/></p>
-                </div>
-                <div class="person-item left">
-                    <p class="yahei">盘切鸡蛋</p>
+                    <a href="/cloud/index.php/Home/Personal/index">
+                        <p class="yahei"><?php echo (session('username')); ?></p>
+                    </a>
                 </div>
             </div>
         </div>

@@ -34,6 +34,7 @@ class IndexController extends Controller {
                 session('userid', $find['user_id']);
                 session('number', $find['number']);
                 session('level', $find['level']);
+                session('max_size', $find['max_size']);
                 echo "<script>alert('登录成功！');javascript:window.location.href='".U('Personal/index')."'</script>";
             }
             else
