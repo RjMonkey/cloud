@@ -3,7 +3,7 @@
 namespace Home\Model;
 use Think\Model;
 
-class IndexModel extends Model {
+class UploadModel extends Model {
     // 重新定义表
     protected $tableName = 'users';
 
@@ -28,4 +28,10 @@ class IndexModel extends Model {
         //array('lastdate', 'time', 1, 'function'), // 对lastdate字段在登录的时候写入当前时间戳
         //array('lastip', 'get_client_ip', 1, 'function'), // 对lastip字段在登录的时候写入当前登录ip地址
     );
+    public function getList($map = array()){
+        $map['is_delete'] = 0;
+        $map['is_examine'] = 1;
+        $result = $this->where($map)->select();
+        return $result;
+    }
 }

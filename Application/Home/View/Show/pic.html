@@ -8,14 +8,14 @@
 </head>
 <include file="Public/header" keywords="{$think.session.username}" />
 <div id="middle" class="center">
-	<p class="yahei" id="p1">音频</p>
+	<p class="yahei" id="p1">图片</p>
 	<div id="sp-container" class="center">
 		<div class="row">
 			<volist name="result" id="vo">
 			<div class="left col">
 				<div class="box">
 					<div class="index-box" >
-						<img src="__PUBLIC__/img/" title="{$vo.title}"/>
+						<img src="__PUBLIC__/Uploads/{$vo.content}" title="{$vo.title}"/>
 					</div>
 					<div>
 						<div class="zoupname"><p class="yahei">{$vo.title}</p></div>

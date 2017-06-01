@@ -5,31 +5,57 @@ class ShowController extends Controller {
 
 
     public function index(){
-        check_login();
-        $list_picture = $this->select_map("picture");
-        $list_video = $this->select_map("video");
-        $list_music = $this->select_map("music");
-        $list_rar = $this->select_map("rar");
-        $this->assign('list_picture', $list_picture);
-        $this->assign('list_video', $list_video);
-        $this->assign('list_music', $list_music);
-        $this->assign('list_rar', $list_rar);
+
         $this->display();
     }
     public function detail(){
         $this->display();
     }
     public function video(){
+        $map['category'] = "mov";
+        $map['is_delete'] = 0;
+        $map['is_examine'] = 1;
+        $result = M('Upload')->where($map)->select();
+        $this->assign('result', $result);
         $this->display();
     }
-    private function select_map($str){
-        $map = array(
-            'group' => "all",
-            'is_delete' => "0",
-            'is_examine' => "1",
-            "category" => $str
-        );
+    public function pic(){
+        $map['category'] = "pic";
+        $map['is_delete'] = 0;
+        $map['is_examine'] = 1;
+        $tag = I('get.tag');
+        switch($tag){
+            case "erwei":
+                $map['tag'] = "二维";
+                break;
+            case "sanwei":
+                $map['tag'] = "二维";
+                break;
+            case "shejizuopin":
+                $map['tag'] = "二维";
+                break;
+            default:
+                $map['tsg'] = "";
+                break;
+        }
         $result = M('Upload')->where($map)->select();
-        return $result;
+        $this->assign('result', $result);
+        $this->display();
+    }
+    public function rar(){
+        $map['category'] = "rar";
+        $map['is_delete'] = 0;
+        $map['is_examine'] = 1;
+        $result = M('Upload')->where($map)->select();
+        $this->assign('result', $result);
+        $this->display();
+    }
+    public function mic(){
+        $map['category'] = "mic";
+        $map['is_delete'] = 0;
+        $map['is_examine'] = 1;
+        $result = M('Upload')->where($map)->select();
+        $this->assign('result', $result);
+        $this->display();
     }
 }

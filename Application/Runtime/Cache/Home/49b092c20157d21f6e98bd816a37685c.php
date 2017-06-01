@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
-	<title>视屏</title>
+	<title>艺术类管理平台</title>
 	<link rel="stylesheet" href="/cloud/Public/css/bootstrap.css" type="text/css">
 	<link rel="stylesheet" href="/cloud/Public/css/commom.css" type="text/css">
 	<link rel="stylesheet" href="/cloud/Public/css/shipin.css" type="text/css">
@@ -20,9 +20,9 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
                         <ul class="dropdown-menu"  >
-                            <li ><a href="##">二维</a></li>
-                            <li ><a href="##">三维</a></li>
-                            <li ><a href="##">设计作品</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/erwei">二维</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/sanwei">三维</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/shejizuopin">设计作品</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -66,131 +66,55 @@
 	<p class="yahei" id="p1">压缩文件</p>
 	<div id="sp-container" class="center">
 		<div class="row">
-			<div class="left col">
+			<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="left col">
 				<div class="box">
 					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
+						<img src="/cloud/Public/Uploads/<?php echo ($vo["content"]); ?>" title="<?php echo ($vo["title"]); ?>"/>
 					</div>
 					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
+						<div class="zoupname"><p class="yahei"><?php echo ($vo["title"]); ?></p></div>
 						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
 						<p style="float:left;" class="yahei">455</p>
 					</div>
 				</div>
 				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
+					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz"><?php echo ($user_name); ?></p>
 				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
-			<div class="left col">
-				<div class="box">
-					<div class="index-box" >
-						<img src="/cloud/Public/img/sp.jpg" title="兰迪的图片"/>
-					</div>
-					<div>
-						<div class="zoupname"><p class="yahei">作品名称</p></div>
-						<div class="heart"><img src="/cloud/Public/img/heart2.png"/></div>
-						<p style="float:left;" class="yahei">455</p>
-					</div>
-				</div>
-				<div>
-					<div class="yuan"><img src="/cloud/Public/img/ren.png"/></div><p class="yahei minz">盘切鸡蛋</p>
-				</div>
-			</div>
+			</div><?php endforeach; endif; else: echo "" ;endif; ?>
 		</div>
 	</div>
 </div>
 </div>
 </body>
+<script language="JavaScript">
+    <!--
+    if (window.Event)
+        document.captureEvents(Event.MOUSEUP);
+    function nocontextmenu()
+    {
+        event.cancelBubble = true
+        event.returnValue = false;
+        return false;
+    }
+    function norightclick(e)
+    {
+        if (window.Event)
+        {
+            if (e.which == 2 || e.which == 3)
+                return false;
+        }
+        else
+        if (event.button == 2 || event.button == 3)
+        {
+            event.cancelBubble = true
+            event.returnValue = false;
+            return false;
+        }
+    }
+    document.oncontextmenu = nocontextmenu; // for IE5+
+    document.onmousedown = norightclick; // for all others
+    //-->
+</script>
 <script src="/cloud/Public/js/jquery-3.1.1.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="/cloud/Public/js/my_main.js"></script>

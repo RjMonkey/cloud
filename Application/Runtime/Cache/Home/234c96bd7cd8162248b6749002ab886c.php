@@ -20,9 +20,9 @@
                     <li class="dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle"  >图片</a>
                         <ul class="dropdown-menu"  >
-                            <li ><a href="##">二维</a></li>
-                            <li ><a href="##">三维</a></li>
-                            <li ><a href="##">设计作品</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/erwei">二维</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/sanwei">三维</a></li>
+                            <li ><a href="/cloud/index.php/Home/Show/pic/tag/shejizuopin">设计作品</a></li>
                         </ul>
                     </li>
                 </ul>
