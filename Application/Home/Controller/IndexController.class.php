@@ -1,51 +1,58 @@
 <?php
 namespace Home\Controller;
+use Think\App;
 use Think\Controller;
 class IndexController extends Controller {
-    public function index(){
+
+    /**
+     *
+     */
+    public function index()
+    {
         $this->show();
     }
 
+    /**
+     *
+     */
     public function login()
     {
         // 判断提交方式
         if (IS_POST) {
-            // 实例化Login对象
-            $login = D('login');
 
-            // 自动验证 创建数据集
-            if (!$data = $login->create()) {
-                // 防止输出中文乱码
-                header("Content-type: text/html; charset=utf-8");
-                exit($login->getError());
+            $username = trim(I('post.username'));
+            $userpsd = trim(I('post.password'));
+
+            $result = M("lms_user", null);
+            $fwhere['user_number'] = $username;
+            $fwhere['user_password'] = $userpsd;
+            $find = $result->where($fwhere)->select();
+
+            if(I('session.username') || $find)
+            {
+                $userid = $find[0]['id'];
+                session('username', 1);
+                session('userid', $userid);
+//                $this->redirect('Personal/personal');
+                echo "<script language='javascript'>alert('登录成功！');javascript:window.location.href='".U('Personal/personal');
+            }
+            else
+            {
+//                $this->error("帐号或密码输入错误");
+                echo "<script language='javascript'>alert('账户密码输入错误！');javascript:history.go(-1);</script>";
+//                echo "<script></script>";
             }
 
-            // 组合查询条件
-            $where = array();
-            $where['username'] = $data['username'];
-            $result = $login->where($where)->field('userid,username,nickname,password,lastdate,lastip')->find();
-
-            // 验证用户名 对比 密码
-            if ($result && $result['password'] == $result['password']) {
-                // 存储session
-                session('uid', $result['userid']);          // 当前用户id
-                session('nickname', $result['nickname']);   // 当前用户昵称
-                session('username', $result['username']);   // 当前用户名
-                session('lastdate', $result['lastdate']);   // 上一次登录时间
-                session('lastip', $result['lastip']);       // 上一次登录ip
-
-                // 更新用户登录信息
-                $where['userid'] = session('uid');
-                M('users')->where($where)->setInc('loginnum');   // 登录次数加 1
-                M('users')->where($where)->save($data);   // 更新登录时间和登录ip
-
-                $this->success('登录成功,正跳转至系统首页...', U('Index/index'));
-            } else {
-                $this->error('登录失败,用户名或密码不正确!');
-            }
         } else {
+            //echo "inelse";
             $this->display();
         }
+    }
+
+    public function logout()
+    {
+        session(null);
+        $this->success("注销成功");
     }
 
 }

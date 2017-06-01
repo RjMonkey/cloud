@@ -12,23 +12,26 @@
 		<div id="biaoti"><p>欢迎来到北洋呵呵呵</p></div>
 	</div>
 	<div id="middle" >
+		<form action="__MODULE__/Index/login" method="post">
 		<p style="height:1px;"></p>
 		<div id="logbox" >
-			<form>
+
 				<div class="feiru" >
 					<img src="__PUBLIC__/img/people.png" class="inp-img"/>
-					<input type="text" placeholder="输入学号或工号" name="username" />
+					<input type="text" placeholder="输入学号或工号" name="username" required="required"/>
 				</div>
 				<div class="feiru" style="margin-top:5%;">
 					<img src="__PUBLIC__/img/key.png" / class="inp-img">
-					<input type="password" name="password" placeholder="密码"/>
+					<input type="password" name="password" placeholder="密码" required="required"/>
 				</div>
+
 				<a href="#" id="forget">忘记密码&gt&gt</a>
-			</form>
-		</div>
-		<div id="button"  onmouseover="style.backgroundImage= 'url(__PUBLIC__/img/hover.png)';" onmouseout="style.backgroundImage= 'url(__PUBLIC__/img//normal.png)';" onmousedown="style.backgroundImage= 'url(__PUBLIC__/img/press.png)';" onmouseup="style.backgroundImage= 'url(__PUBLIC__/img/hover.png)';" type="submit">
+
+
 
 		</div>
+		<button id="button"  type="submit" onmouseover="style.backgroundImage= 'url(__PUBLIC__/img/hover.png)';" onmouseout="style.backgroundImage= 'url(__PUBLIC__/img/normal.png)';" onmousedown="style.backgroundImage= 'url(__PUBLIC__/img/press.png)';" onmouseup="style.backgroundImage= 'url(__PUBLIC__/img/hover.png)';"></button>
+		</form>
 	</div >
 
 </div>
